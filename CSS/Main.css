@@ -38,7 +38,8 @@ h1 {
 	font-size: 280%; /* 40 PX FULL SCREEN */
 	font-family: 'Gabriela', serif;
 	 text-shadow: 2px 3px #777777;
-	 	 padding: 0px;
+	 padding: 0px;
+	 margin-bottom: 1en;
 }
 
 h2 {
@@ -47,15 +48,17 @@ h2 {
 	font-family: 'Goudy Bookletter 1911', serif;
 	 text-shadow: 3px 3px #777777;
 	 padding: 0px;
+	  margin-bottom: 1en;
 	}
 
 h3{
 	color: #111199;
 	font-variant: small-caps;
-	font-size: 175%; /* 30 PX FULL SCREEN */
+	font-size: 200%; /* 30 PX FULL SCREEN */
 	font-family: 'Merriweather', serif;
 	 text-shadow: 2px 3px #777777;
 	 padding: 0px;
+	 margin-bottom: 1en
 }
 
 a{
@@ -125,7 +128,23 @@ img.center{
 	
 }
 
+ul{
+	width: 75%;
+	float: right;
+	margin-right: 3em;
+}
 
+li{
+	color: #0ffcce;
+}
+.event{
+	display: in-line block;
+	margin-left: auto;
+ 	margin-right: auto;
+	width: 30%;
+	float: left;
+	margin-right: 2em;
+}
 footer {
 	padding: 10px;
 	opacity: 10%;
@@ -137,5 +156,58 @@ img.logo{
 	padding: 0px;
 	opacity: 100%;
 }
+img.event{
+	width: 35%;
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	padding: 2en;
+}
 
-
+/*Media Query*/
+@media all and (max-width: 720px){
+ 	nav{
+    border:1px solid #dddddd;
+    color:#06425C;
+    background-color: #dddddd;
+	opacity: 100%;
+    display: block;
+    width: 10%;
+    min-width: 90px;
+    margin-right:1en;
+    height: 24vh;
+    float: right;
+  } 
+  nav a {
+	display: block;
+	margin: 3px;
+	border-radius: 2px;
+	background-color: rgba(153, 153, 204, .5);
+	opacity: 10%;
+	text-decoration: none;
+	padding: 0px;
+	width: 95%;
+	float: right;
+}
+.event{
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	width: 60%;
+	float: right;
+	margin-right: 7em;
+}
+img.event{
+	width: 35%;
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	padding: 5en;
+}
+ul{
+	width: 45%;
+	float: right;
+	margin-right: 3en;
+	text-align: left;
+}
+}
